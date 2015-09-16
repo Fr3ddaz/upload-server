@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddFile(name="addfile",method="post",action="/addfile",enctype="multipart/form-data")
+        input#inputFile(type="file", placeholder="filename", name="filename")
+        // input#inputUserEmail(type="text", placeholder="useremail", name="useremail")
+        button#btnSubmit(type="submit") submit
